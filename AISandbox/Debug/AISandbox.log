@@ -1,4 +1,4 @@
-﻿Build started 11/02/2015 15:40:29.
+﻿Build started 11/02/2015 16:07:56.
      1>Project "D:\C++Projects\NonDissertationProjects\AISandbox\AISandbox\AISandbox.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\AISandbox.unsuccessfulbuild" because "AlwaysCreate" was specified.
@@ -97,4 +97,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.94
+Time Elapsed 00:00:01.93
