@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B40E66DC-4962-440B-9B24-BF13DD176247}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>AISandbox</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\SDL\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\SDL\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\SDL\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\SDL\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL.lib;SDL_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>SDL.lib;SDL_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AccelerationModels.cpp" />
+    <ClCompile Include="AIManager.cpp" />
+    <ClCompile Include="AngleConvert.cpp" />
+    <ClCompile Include="Automator.cpp" />
+    <ClCompile Include="BBox.cpp" />
+    <ClCompile Include="BehaveArrive.cpp" />
+    <ClCompile Include="BehaveAvoid.cpp" />
+    <ClCompile Include="BehaveAvoidWalls.cpp" />
+    <ClCompile Include="BehaveFollowPath.cpp" />
+    <ClCompile Include="BehaviourTree.cpp" />
+    <ClCompile Include="BitmapFontBillboard.cpp" />
+    <ClCompile Include="BlueTeapot.cpp" />
+    <ClCompile Include="Capsule.cpp" />
+    <ClCompile Include="CollisionManager.cpp" />
+    <ClCompile Include="File.cpp" />
+    <ClCompile Include="GameObjectManager.cpp" />
+    <ClCompile Include="GlutTimer.cpp" />
+    <ClCompile Include="IdleState.cpp" />
+    <ClCompile Include="IntersectionFuncs.cpp" />
+    <ClCompile Include="Level.cpp" />
+    <ClCompile Include="LineSegment.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="NavMesh.cpp" />
+    <ClCompile Include="Npc.cpp" />
+    <ClCompile Include="ObjUsefulFunctions.cpp" />
+    <ClCompile Include="OpenGLGraphDrawAlgorithms.cpp" />
+    <ClCompile Include="Path.cpp" />
+    <ClCompile Include="PhysicsTrasnform.cpp" />
+    <ClCompile Include="Plane.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="RedTeapot.cpp" />
+    <ClCompile Include="Sphere.cpp" />
+    <ClCompile Include="SteeringData.cpp" />
+    <ClCompile Include="TextToSpeech.cpp" />
+    <ClCompile Include="Texture.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AccelerationModels.h" />
+    <ClInclude Include="AIManager.h" />
+    <ClInclude Include="AIState.h" />
+    <ClInclude Include="AngleConvert.h" />
+    <ClInclude Include="AStar.h" />
+    <ClInclude Include="AStarOld.h" />
+    <ClInclude Include="Automator.h" />
+    <ClInclude Include="BBox.h" />
+    <ClInclude Include="BehaveArrive.h" />
+    <ClInclude Include="BehaveAvoid.h" />
+    <ClInclude Include="BehaveAvoidWalls.h" />
+    <ClInclude Include="BehaveFollowPath.h" />
+    <ClInclude Include="Behaviour.h" />
+    <ClInclude Include="BitmapFontBillboard.h" />
+    <ClInclude Include="BlueTeapot.h" />
+    <ClInclude Include="Capsule.h" />
+    <ClInclude Include="CollisionManager.h" />
+    <ClInclude Include="BehaviourTree.h" />
+    <ClInclude Include="Dijkstra.h" />
+    <ClInclude Include="File.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="GameObjectManager.h" />
+    <ClInclude Include="GlutTimer.h" />
+    <ClInclude Include="Graph.h" />
+    <ClInclude Include="GraphAlgorithms.h" />
+    <ClInclude Include="IdleState.h" />
+    <ClInclude Include="IntersectionFuncs.h" />
+    <ClInclude Include="Level.h" />
+    <ClInclude Include="LineSegment.h" />
+    <ClInclude Include="NavMesh.h" />
+    <ClInclude Include="NonCopyable.h" />
+    <ClInclude Include="Npc.h" />
+    <ClInclude Include="ObjUsefulFunctions.h" />
+    <ClInclude Include="Octree.h" />
+    <ClInclude Include="OpenGLGraphDrawAlgorithms.h" />
+    <ClInclude Include="Path.h" />
+    <ClInclude Include="PhysicsTransform.h" />
+    <ClInclude Include="Plane.h" />
+    <ClInclude Include="PlaneCapsuleSeg.h" />
+    <ClInclude Include="PlaneLineSeg.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="RedTeapot.h" />
+    <ClInclude Include="Singleton.h" />
+    <ClInclude Include="SmartPointer.h" />
+    <ClInclude Include="Sphere.h" />
+    <ClInclude Include="AIStateMachine.h" />
+    <ClInclude Include="SteeringData.h" />
+    <ClInclude Include="TextToSpeech.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="Transform.h" />
+    <ClInclude Include="Vec2.h" />
+    <ClInclude Include="Vec3.h" />
+    <ClInclude Include="Vec4.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

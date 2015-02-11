@@ -1,0 +1,100 @@
+﻿Build started 11/02/2015 15:40:29.
+     1>Project "D:\C++Projects\NonDissertationProjects\AISandbox\AISandbox\AISandbox.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\AISandbox.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>d:\c++projects\nondissertationprojects\aisandbox\aisandbox\angleconvert.h(5): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>d:\c++projects\nondissertationprojects\aisandbox\aisandbox\angleconvert.h(6): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>d:\c++projects\nondissertationprojects\aisandbox\aisandbox\main.cpp(179): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>d:\c++projects\nondissertationprojects\aisandbox\aisandbox\main.cpp(179): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>d:\c++projects\nondissertationprojects\aisandbox\aisandbox\main.cpp(179): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>d:\c++projects\nondissertationprojects\aisandbox\aisandbox\main.cpp(187): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>d:\c++projects\nondissertationprojects\aisandbox\aisandbox\main.cpp(217): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>d:\c++projects\nondissertationprojects\aisandbox\aisandbox\main.cpp(218): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>d:\c++projects\nondissertationprojects\aisandbox\aisandbox\main.cpp(219): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>d:\c++projects\nondissertationprojects\aisandbox\aisandbox\astar.h(230): warning C4244: 'return' : conversion from 'float' to 'int', possible loss of data
+                 d:\c++projects\nondissertationprojects\aisandbox\aisandbox\astar.h(228) : while compiling class template member function 'int GraphAStar<T>::HCost(int)'
+                 with
+                 [
+                     T=NavTriangle
+                 ]
+                 d:\c++projects\nondissertationprojects\aisandbox\aisandbox\redteapot.h(16) : see reference to class template instantiation 'GraphAStar<T>' being compiled
+                 with
+                 [
+                     T=NavTriangle
+                 ]
+     1>d:\c++projects\nondissertationprojects\aisandbox\aisandbox\openglgraphdrawalgorithms.h(73): warning C4305: 'argument' : truncation from 'double' to 'float'
+                 d:\c++projects\nondissertationprojects\aisandbox\aisandbox\main.cpp(68) : see reference to function template instantiation 'void DrawGraph<NavTriangle>(const Graph<T> &,const BitmapFontBillboard *,bool)' being compiled
+                 with
+                 [
+                     T=NavTriangle
+                 ]
+     1>d:\c++projects\nondissertationprojects\aisandbox\aisandbox\openglgraphdrawalgorithms.h(73): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>d:\c++projects\nondissertationprojects\aisandbox\aisandbox\openglgraphdrawalgorithms.h(81): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>d:\c++projects\nondissertationprojects\aisandbox\aisandbox\openglgraphdrawalgorithms.h(81): warning C4305: 'argument' : truncation from 'double' to 'float'
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\C++Projects\NonDissertationProjects\AISandbox\AISandbox\Debug\AISandbox.exe" /INCREMENTAL:NO /NOLOGO SDL.lib SDL_image.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\AISandbox.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\C++Projects\NonDissertationProjects\AISandbox\AISandbox\Debug\AISandbox.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\C++Projects\NonDissertationProjects\AISandbox\AISandbox\Debug\AISandbox.lib" /MACHINE:X86 Debug\AccelerationModels.obj
+         Debug\AIManager.obj
+         Debug\AngleConvert.obj
+         Debug\Automator.obj
+         Debug\BBox.obj
+         Debug\BehaveArrive.obj
+         Debug\BehaveAvoid.obj
+         Debug\BehaveAvoidWalls.obj
+         Debug\BehaveFollowPath.obj
+         Debug\BehaviourTree.obj
+         Debug\BitmapFontBillboard.obj
+         Debug\BlueTeapot.obj
+         Debug\Capsule.obj
+         Debug\CollisionManager.obj
+         Debug\File.obj
+         Debug\GameObjectManager.obj
+         Debug\GlutTimer.obj
+         Debug\IdleState.obj
+         Debug\IntersectionFuncs.obj
+         Debug\Level.obj
+         Debug\LineSegment.obj
+         Debug\main.obj
+         Debug\NavMesh.obj
+         Debug\Npc.obj
+         Debug\ObjUsefulFunctions.obj
+         Debug\OpenGLGraphDrawAlgorithms.obj
+         Debug\Path.obj
+         Debug\PhysicsTrasnform.obj
+         Debug\Plane.obj
+         Debug\Player.obj
+         Debug\RedTeapot.obj
+         Debug\Sphere.obj
+         Debug\SteeringData.obj
+         Debug\TextToSpeech.obj
+         Debug\Texture.obj
+     1>AccelerationModels.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/INCREMENTAL:NO' specification
+            Creating library D:\C++Projects\NonDissertationProjects\AISandbox\AISandbox\Debug\AISandbox.lib and object D:\C++Projects\NonDissertationProjects\AISandbox\AISandbox\Debug\AISandbox.exp
+     1>LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+     1>SDL_image.lib(IMG.obj) : warning LNK4204: 'D:\C++Projects\NonDissertationProjects\AISandbox\AISandbox\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>SDL_image.lib(IMG_bmp.obj) : warning LNK4204: 'D:\C++Projects\NonDissertationProjects\AISandbox\AISandbox\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>SDL_image.lib(IMG_gif.obj) : warning LNK4204: 'D:\C++Projects\NonDissertationProjects\AISandbox\AISandbox\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>SDL_image.lib(IMG_jpg.obj) : warning LNK4204: 'D:\C++Projects\NonDissertationProjects\AISandbox\AISandbox\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>SDL_image.lib(IMG_lbm.obj) : warning LNK4204: 'D:\C++Projects\NonDissertationProjects\AISandbox\AISandbox\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>SDL_image.lib(IMG_pcx.obj) : warning LNK4204: 'D:\C++Projects\NonDissertationProjects\AISandbox\AISandbox\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>SDL_image.lib(IMG_png.obj) : warning LNK4204: 'D:\C++Projects\NonDissertationProjects\AISandbox\AISandbox\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>SDL_image.lib(IMG_pnm.obj) : warning LNK4204: 'D:\C++Projects\NonDissertationProjects\AISandbox\AISandbox\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>SDL_image.lib(IMG_tga.obj) : warning LNK4204: 'D:\C++Projects\NonDissertationProjects\AISandbox\AISandbox\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>SDL_image.lib(IMG_tif.obj) : warning LNK4204: 'D:\C++Projects\NonDissertationProjects\AISandbox\AISandbox\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>SDL_image.lib(IMG_webp.obj) : warning LNK4204: 'D:\C++Projects\NonDissertationProjects\AISandbox\AISandbox\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>SDL_image.lib(IMG_xcf.obj) : warning LNK4204: 'D:\C++Projects\NonDissertationProjects\AISandbox\AISandbox\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>SDL_image.lib(IMG_xpm.obj) : warning LNK4204: 'D:\C++Projects\NonDissertationProjects\AISandbox\AISandbox\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>SDL_image.lib(IMG_xv.obj) : warning LNK4204: 'D:\C++Projects\NonDissertationProjects\AISandbox\AISandbox\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+         AISandbox.vcxproj -> D:\C++Projects\NonDissertationProjects\AISandbox\AISandbox\Debug\AISandbox.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\C++Projects\NonDissertationProjects\AISandbox\AISandbox\Debug\AISandbox.exe;#1" /manifest Debug\AISandbox.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\AISandbox.unsuccessfulbuild".
+         Touching "Debug\AISandbox.lastbuildstate".
+     1>Done Building Project "D:\C++Projects\NonDissertationProjects\AISandbox\AISandbox\AISandbox.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.94

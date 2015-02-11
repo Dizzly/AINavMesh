@@ -1,0 +1,17 @@
+﻿Build started 30/09/2014 14:29:58.
+     1>Project "D:\C++Projects\NonDissertationProjects\AISandbox\AISandbox\AISandbox.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\AISandbox.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+         AISandbox.vcxproj -> D:\C++Projects\NonDissertationProjects\AISandbox\AISandbox\Release\AISandbox.exe
+       FinalizeBuildStatus:
+         Deleting file "Release\AISandbox.unsuccessfulbuild".
+         Touching "Release\AISandbox.lastbuildstate".
+     1>Done Building Project "D:\C++Projects\NonDissertationProjects\AISandbox\AISandbox\AISandbox.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.25
